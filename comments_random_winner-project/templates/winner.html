@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Winner</title>
+</head>
+<style>
+        h1{
+            padding-top: 20px;
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 30px; 
+        }
+        #winner{
+            padding-top: 200px;
+        }
+</style>
+<body>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/comments">Comments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/winner">Choose winner</a>
+        </li>
+    </ul>
+    <div class="container" id="winner">
+        {{ winner|safe }}
+    </div>
+    
+    <footer id="footer" class="text-muted py-3 bg-dark fixed-bottom">
+        <div class="container text-center text-white">
+          <p>©️ Jaime Ortiz Aragón {% now "Y" %}</p>
+          <a  href="https://www.linkedin.com/in/jaime-ortiz-arag%C3%B3n-0380881a4/" class="fa fa-linkedin"></a>
+          <a  href="https://github.com/imjaimeortiz" class="fa fa-github"></a>
+          <a href="https://www.instagram.com/imjaimeortiz/" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
